@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                margin: 0;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .navbar{
+                overflow: hidden;
+                background-color: black;
+                padding-left: 3%;
+            }
+            .navbar a{
+                float: left;
+                color: rgb(172, 167, 167);
+                /* text-align: center; */
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .navbar a:hover {
+                background-color: rgb(32, 32, 32);
+             }
+             .content{
+                 width: 90%;
+                 margin: auto;
+             }
+             .column1{
+                 width: 65%;
+                 float: left;
+             }
+             .column1 h1{
+                 margin-top: 40px;
+             }
+             .column1 h3{
+                 margin-top: 10px;
+             }
+             .column1 span{
+                 color: rgb(36, 124, 206);
+             }
+             hr{
+                 margin-top: 20px;
+                 height: 1px;
+                background-color: #ccc;
+                border: none
+             }
+             .column1 p{
+                 margin-top: 20px;
+                 font-size: 15px;
+             }
+             .column1 img{
+                 width: 100%;
+                 margin-top: 20px;
+             }
+             .column1 h4{
+                 margin-top: 20px;
+                 font-weight: 500;
+                 font-size: larger;
+             }
+             .last{
+                margin-bottom: 150px;
+                margin-top: 30px;
+             }
+             .column2{
+                 float: right;
+                 width: 32%;
+             }
+             .searchdiv{
+                 background-color: rgb(240, 239, 239);
+                 margin-top: 25px;
+                 padding: 25px 20px;
+                 border: 1px solid rgb(194, 194, 194);
+                border-radius: 4px;
+                box-sizing: border-box;
+             }
+             .searchdiv h3{
+                font-weight: 500;
+                 font-size: larger;
+             }
+             .searchbar{
+                 margin-top: 10px;
+                 display: flex;
+                 align-items: stretch;
+                 box-sizing: border-box;
+             }
+             
+             input[type=text] {
+                padding: 6px;
+                font-size: 17px;
+                border: 1px solid rgb(194, 194, 194);
+                /* width: 80%; */
+                background-color: white;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+                flex-grow: 9;
+           }
+
+            button {
+                /* width: 20%; */
+                padding: 6px;
+                background: white;
+                color: black;
+                font-size: 17px;
+                border: 1px solid rgb(194, 194, 194);
+                border-left: none;
+                cursor: pointer;
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+                flex-grow: 1;
+            }
+
+             .categorydiv{
+                background-color: rgb(240, 239, 239);
+                margin-top: 25px;
+                padding: 25px 20px;
+                border: 1px solid rgb(194, 194, 194);
+                border-radius: 4px;
+             }
+             .categorydiv h3{
+                font-weight: 500;
+                 font-size: larger;
+             }
+             .cat-col1{
+                display: flex;
+                flex-direction: column;
+                float: left;
+                width: 50%;
+                margin-top: 10px;
+             }
+             .cat-col2{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+             }
+             a{
+                 text-decoration: none;
+                 color: rgb(36, 124, 206);;
+             }
+             .widgetdiv{
+                background-color: rgb(240, 239, 239);
+                margin-top: 25px;
+                padding: 25px 20px;
+                border: 1px solid rgb(194, 194, 194);
+                border-radius: 4px;
+             }
+             .widgetdiv h3{
+                font-weight: 500;
+                 font-size: larger;
+             }
+             .widgetdiv p{
+                font-size: 15px;
+                margin-top: 10px;
+             }
+             @media screen and (max-width: 1050px){
+                .column1{
+                 width: 100%;
+                 float: left;
+             }
+             .column2{
+                 float: left;
+                 width: 100%;
+                 margin-bottom: 100px;
+             }
+             }
+
+             @media screen and (max-width: 600px){
+                .navbar a{
+                    float: none;
+                    display: block;
+                }            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maindiv">
+            <div class="navbar">
+                <a href="#">Layout3</a>    
+                <a href="#">About</a>   
+                <a href="#">Services</a>    
+                <a href="#">Contact</a>
+            </div>
+            <div class="content">
+                <div class="column1">
+                    <h1>Blog Post Title</h1>
+                    <h3>by <span>Test</span></h3>
+                    <hr>
+                    <p>Posted on August 24, 2013 at 9:00 PM</p>
+                    <hr>
+                    <img src="image.png" alt="img">
+                    <hr>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus , vero, obcaecati, aut error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis, eligendi eos magni recusandae laborum minus inventore?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                    <hr class="last">
+                </div>
+                <div class="column2">
+                    <div class="searchdiv">
+                        <h3>Blog Search</h3>
+                        <div class="searchbar">
+                                <input type="text" name="search">
+                                <button  type="submit"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                    <div class="categorydiv">
+                        <h3>Blog Categories</h3>
+                        <div class="cat-col1">
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                        </div>
+                        <div class="cat-col2">
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                            <a href="#">Category name</a>
+                        </div>
+                    </div>
+                    <div class="widgetdiv">
+                        <h3>Side Widget Well</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit dolorum ab tempora nihil dicta earum fugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
